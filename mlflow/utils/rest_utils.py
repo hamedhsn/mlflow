@@ -22,7 +22,7 @@ from mlflow.environment_variables import (
 )
 
 RESOURCE_DOES_NOT_EXIST = "RESOURCE_DOES_NOT_EXIST"
-_REST_API_PATH_PREFIX = "/api/2.0"
+_REST_API_PATH_PREFIX = "/ajax-api/2.0"
 
 
 def http_request(
