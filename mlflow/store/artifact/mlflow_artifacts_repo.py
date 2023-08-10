@@ -46,7 +46,7 @@ class MlflowArtifactsRepository(HttpArtifactRepository):
 
     @classmethod
     def resolve_uri(cls, artifact_uri, tracking_uri):
-        base_url = "/api/2.0/mlflow-artifacts/artifacts"
+        base_url = "/ajax-api/2.0/mlflow-artifacts/artifacts"
 
         track_parse = urlparse(tracking_uri)
 

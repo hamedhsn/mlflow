@@ -234,7 +234,7 @@ def _get_proxied_run_artifact_destination_path(proxied_artifact_root, relative_p
         # `/api/2.0/mlflow-artifacts/artifacts`. Accordingly, we split the path on this route anchor
         # and interpret the rest of the path (everything after the route anchor) as the run artifact
         # root path
-        mlflow_artifacts_http_route_anchor = "/api/2.0/mlflow-artifacts/artifacts/"
+        mlflow_artifacts_http_route_anchor = "/ajax-api/2.0/mlflow-artifacts/artifacts/"
         assert mlflow_artifacts_http_route_anchor in parsed_proxied_artifact_root.path
 
         proxied_run_artifact_root_path = parsed_proxied_artifact_root.path.split(

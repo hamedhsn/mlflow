@@ -21,7 +21,7 @@ _DEFAULT_USER_ID = "unknown"
 
 class MLflowTrackingRestApi:
     def __init__(self, hostname, port, experiment_id):
-        self.base_url = "http://" + hostname + ":" + str(port) + "/api/2.0/mlflow"
+        self.base_url = "http://" + hostname + ":" + str(port) + "/ajax-api/2.0/mlflow"
         self.experiment_id = experiment_id
         self.run_id = self.create_run()
 
